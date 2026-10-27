@@ -50,7 +50,7 @@ export default function ImportTemplateButton() {
         className="
           absolute
           -right-8
-          -top-8
+          -top-4 sm:p-6 xl:p-8
           h-24
           w-24
           rounded-full

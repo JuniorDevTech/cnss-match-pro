@@ -37,7 +37,7 @@ export default function Dropzone() {
   });
 
   return (
-    <div className="bg-white rounded-3xl shadow-sm p-8">
+    <div className="bg-white rounded-3xl shadow-sm p-4 sm:p-6 xl:p-8">
       <div
         {...getRootProps()}
         className={`

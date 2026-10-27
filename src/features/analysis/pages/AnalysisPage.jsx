@@ -33,7 +33,7 @@ export default function AnalysisPage() {
 
         {/* RÉSULTATS */}
         {results.length > 0 ? (
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-1 sm:grid-cols-2 gap-6">
             {results.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}

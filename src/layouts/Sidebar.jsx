@@ -63,13 +63,14 @@ export default function Sidebar() {
           fixed
           top-4
           left-4
-          z-[60]
+          z-60
           p-3
           rounded-xl
           bg-[#06122B]
           text-white
           shadow-lg
-        ">
+        "
+      >
         <Menu size={22} />
       </button>
 
@@ -91,7 +92,7 @@ export default function Sidebar() {
       {/* SIDEBAR */}
       <aside
         className={`
-          fixed lg:sticky
+          fixed
           top-0 left-0
           z-50
           h-screen
@@ -108,7 +109,8 @@ export default function Sidebar() {
           transition-all duration-300
 
           ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
-        `}>
+        `}
+      >
         {/* HEADER */}
         <div className="border-b border-white/10 px-5 py-6">
           <div className="flex items-center justify-between">
@@ -121,12 +123,13 @@ export default function Sidebar() {
                   items-center
                   justify-center
                   rounded-2xl
-                  bg-gradient-to-br
+                  bg-linear-to-br
                   from-blue-500
                   to-blue-700
                   shadow-lg
                   shadow-blue-600/30
-                ">
+                "
+              >
                 <Shield size={24} />
               </div>
 
@@ -139,7 +142,8 @@ export default function Sidebar() {
 
             <button
               onClick={() => setIsOpen(false)}
-              className="lg:hidden text-slate-400 hover:text-white">
+              className="lg:hidden text-slate-400 hover:text-white"
+            >
               <X size={22} />
             </button>
           </div>
@@ -153,7 +157,8 @@ export default function Sidebar() {
             px-3
             py-5
             scrollbar-thin
-          ">
+          "
+        >
           <div className="space-y-2">
             {links.map((link) => {
               const Icon = link.icon;
@@ -177,11 +182,12 @@ export default function Sidebar() {
 
                     ${
                       isActive
-                        ? "bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg shadow-blue-900/40"
+                        ? "bg-linear-to-r from-blue-600 to-blue-700 shadow-lg shadow-blue-900/40"
                         : "hover:bg-white/5"
                     }
                   `
-                  }>
+                  }
+                >
                   {({ isActive }) => (
                     <>
                       <div className="flex items-center gap-3">
@@ -198,7 +204,7 @@ export default function Sidebar() {
 
                         <span
                           className={`
-                            hidden xl:block
+                            ${isOpen ? "block" : "hidden xl:block"}
                             text-sm
                             font-medium
 
@@ -207,7 +213,8 @@ export default function Sidebar() {
                                 ? "text-white"
                                 : "text-slate-300 group-hover:text-white"
                             }
-                          `}>
+                          `}
+                        >
                           {link.name}
                         </span>
                       </div>
@@ -215,7 +222,7 @@ export default function Sidebar() {
                       {isActive && (
                         <ChevronRight
                           size={18}
-                          className="hidden xl:block text-white"
+                          className={`${isOpen ? "block" : "hidden xl:block"} text-white`}
                         />
                       )}
                     </>
@@ -231,12 +238,13 @@ export default function Sidebar() {
           <div
             className="
               rounded-3xl
-              bg-gradient-to-br
+              bg-linear-to-br
               from-blue-600/20
               via-slate-800
               to-slate-900
               p-5
-            ">
+            "
+          >
             <div className="hidden xl:block">
               <p className="text-xs uppercase tracking-widest text-slate-400">
                 Statut Analyse
@@ -253,7 +261,7 @@ export default function Sidebar() {
                   className="
                     h-full
                     rounded-full
-                    bg-gradient-to-r
+                    bg-linear-to-r
                     from-green-400
                     to-green-500
                     transition-all
@@ -282,7 +290,8 @@ export default function Sidebar() {
                   items-center
                   justify-center
                   font-bold
-                ">
+                "
+              >
                 {coverage}%
               </div>
             </div>

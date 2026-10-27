@@ -54,7 +54,7 @@ export default function ExportCards() {
   }
 
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 xl:grid-cols-1 sm:grid-cols-2 gap-6">
       {results.map((project) => {
         const status =
           project.coverage >= 90
@@ -180,7 +180,7 @@ export default function ExportCards() {
               </div>
 
               {/* KPI */}
-              <div className="mt-6 grid grid-cols-2 gap-4">
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div
                   className="
                     rounded-2xl

@@ -142,13 +142,18 @@ export default function BDSFilesTable() {
       <div
         className="
           flex
-          items-center
-          justify-between
+          flex-col
+          gap-2
+          items-start
+          sm:flex-row
+          sm:items-center
+          sm:justify-between
           border-t
           border-slate-100
           bg-slate-50
-          px-6
+          px-4
           py-4
+          sm:px-6
         ">
         <div className="flex items-center gap-2 text-sm text-slate-500">
           <FileSpreadsheet size={16} />
@@ -159,7 +164,7 @@ export default function BDSFilesTable() {
           </span>
         </div>
 
-        <div className="text-sm text-slate-400">
+        <div className="text-xs text-slate-400 sm:text-sm">
           Dernière synchronisation : Temps réel
         </div>
       </div>

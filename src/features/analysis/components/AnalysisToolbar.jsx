@@ -69,7 +69,7 @@ export default function AnalysisToolbar() {
               from-blue-600
               via-blue-700
               to-indigo-700
-              px-8
+              px-4 sm:px-6 xl:px-8
               py-4
               font-semibold
               text-white

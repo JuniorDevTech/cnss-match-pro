@@ -105,7 +105,7 @@ export default function ProjectCard({ project }) {
           </div>
 
           {/* KPI */}
-          <div className="mt-8 grid grid-cols-3 gap-4">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             <Stat
               icon={Users}
               label="Agents"

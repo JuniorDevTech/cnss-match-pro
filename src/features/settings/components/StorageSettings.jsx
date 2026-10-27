@@ -88,7 +88,7 @@ export default function StorageSettings() {
         </div>
 
         {/* Stats */}
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
           {stats.map((item) => {
             const Icon = item.icon;
 

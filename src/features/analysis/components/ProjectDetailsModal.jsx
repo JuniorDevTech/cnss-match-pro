@@ -67,7 +67,7 @@ export default function ProjectDetailsModal({ project, onClose }) {
             from-blue-700
             via-blue-800
             to-indigo-900
-            p-8
+            p-4 sm:p-6 xl:p-8
             text-white
           ">
           <div className="flex items-start justify-between">
@@ -118,7 +118,7 @@ export default function ProjectDetailsModal({ project, onClose }) {
           </div>
 
           {/* KPI QUICK VIEW */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             <div className="rounded-2xl bg-white/10 p-4">
               <p className="text-blue-200 text-sm">Couverture</p>
 

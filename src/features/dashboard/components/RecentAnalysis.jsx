@@ -40,7 +40,7 @@ export default function RecentAnalysis() {
 
   if (!results.length) {
     return (
-      <div className="rounded-3xl border border-slate-100 bg-white p-8 shadow-lg shadow-slate-200/50">
+      <div className="rounded-3xl border border-slate-100 bg-white p-4 sm:p-6 xl:p-8 shadow-lg shadow-slate-200/50">
         <h3 className="text-lg font-bold text-slate-900">Analyses récentes</h3>
 
         <p className="mt-4 text-slate-500">Aucune analyse disponible.</p>

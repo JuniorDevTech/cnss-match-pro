@@ -70,7 +70,7 @@ export default function GlobalStats() {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
       {stats.map((item) => {
         const Icon = item.icon;
         const colors = colorClasses[item.color];

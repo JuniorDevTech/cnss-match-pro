@@ -12,7 +12,7 @@ export default function CoverageByProject() {
 
   if (!results.length) {
     return (
-      <div className="rounded-3xl border border-slate-100 bg-white p-8 shadow-lg shadow-slate-200/50">
+      <div className="rounded-3xl border border-slate-100 bg-white p-4 sm:p-6 xl:p-8 shadow-lg shadow-slate-200/50">
         <h3 className="font-bold text-slate-900 text-lg">
           Couverture par projet
         </h3>
@@ -157,7 +157,7 @@ export default function CoverageByProject() {
               </div>
 
               {/* STATS */}
-              <div className="mt-5 grid grid-cols-3 gap-4 border-t border-slate-100 pt-4">
+              <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 border-t border-slate-100 pt-4">
                 <div>
                   <p className="text-xs text-slate-400">Correspondances</p>
 

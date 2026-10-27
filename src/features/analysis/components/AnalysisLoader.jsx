@@ -10,7 +10,7 @@ export default function AnalysisLoader() {
         border
         border-slate-100
         bg-white
-        p-8
+        p-4 sm:p-6 xl:p-8
         shadow-xl
         shadow-slate-200/40
       ">
@@ -103,7 +103,7 @@ export default function AnalysisLoader() {
         </div>
 
         {/* Steps */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
           <div
             className="
               flex

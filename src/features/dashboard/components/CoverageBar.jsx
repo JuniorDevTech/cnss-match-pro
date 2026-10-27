@@ -99,7 +99,7 @@ export default function CoverageBar() {
         </div>
 
         {/* Footer stats */}
-        <div className="mt-6 grid grid-cols-3 gap-4 border-t border-slate-100 pt-5">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 border-t border-slate-100 pt-5">
           <div>
             <p className="text-xs text-slate-400">Statut</p>
 

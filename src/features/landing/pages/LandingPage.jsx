@@ -30,7 +30,7 @@ export default function LandingPage() {
         {/* FEATURES */}
 
         <section className="py-20">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             <FeatureCard
               title="Importer"
               description="Importez les fichiers BDS et les listes du personnel au format Excel."

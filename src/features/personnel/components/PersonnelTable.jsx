@@ -27,9 +27,9 @@ export default function PersonnelTable() {
   }
 
   return (
-    <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
+    <div className="min-w-0 max-w-full overflow-hidden rounded-2xl bg-white shadow-sm sm:rounded-3xl">
       {/* Search */}
-      <div className="p-4 border-b border-slate-200">
+      <div className="border-b border-slate-200 p-3 sm:p-4">
         <input
           type="text"
           placeholder="Rechercher un agent..."
@@ -39,7 +39,7 @@ export default function PersonnelTable() {
         />
       </div>
 
-      <table className="w-full">
+      <div className="table-scroll w-full">\n      <table className="w-full min-w-[680px] text-sm">
         <thead className="bg-slate-50">
           <tr>
             <th className="text-left px-4 py-4">CNSS</th>
@@ -60,9 +60,10 @@ export default function PersonnelTable() {
           ))}
         </tbody>
       </table>
+      </div>
 
       {!filteredPersonnel.length && (
-        <div className="p-8 text-center text-slate-500">
+        <div className="p-4 sm:p-6 xl:p-8 text-center text-slate-500">
           Aucun résultat trouvé.
         </div>
       )}

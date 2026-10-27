@@ -42,7 +42,7 @@ export default function ExportPreviewModal({ project, onConfirm, onClose }) {
             from-green-600
             via-emerald-600
             to-green-700
-            p-8
+            p-4 sm:p-6 xl:p-8
             text-white
           ">
           <div className="flex items-start justify-between">
@@ -86,9 +86,9 @@ export default function ExportPreviewModal({ project, onConfirm, onClose }) {
         </div>
 
         {/* CONTENT */}
-        <div className="p-8">
+        <div className="p-4 sm:p-6 xl:p-8">
           {/* Infos projet */}
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             <InfoCard
               icon={FolderKanban}
               label="Projet"
